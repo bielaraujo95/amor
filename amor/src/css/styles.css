@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', cursive, Arial, sans-serif;
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #e63946;
+    margin-top: 50px;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #f1faee;
+    color: #1d3557;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a8dadc;
+}
+
+.second-page {
+    background-image: url('../assets/imagens/fundo-romantico.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.music {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, p {
+    color: #fff;
+    text-shadow: 2px 2px 8px #e75480;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 18px 40px;
+    background: #fff;
+    color: #e75480;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 20px #e75480a0;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #e75480;
+    color: #fff;
+}
+
+.segunda-bg {
+    background: url('../assets/foto-fundo.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(255, 182, 193, 0.7);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    padding: 0 20px;
+}
+
+.overlay h1,
+.overlay p,
+.overlay .contador {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+}
+
+.overlay .contador {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px #e75480;
+}
+
+/* Animação de corações */
+.hearts {
+    position: fixed;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+}
+.heart {
+    position: absolute;
+    width: 30px; height: 30px;
+    background: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2764.png') no-repeat center/contain;
+    opacity: 0.8;
+    animation: float 6s linear infinite;
+}
+@keyframes float {
+    0% { transform: translateY(100vh) scale(1); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
